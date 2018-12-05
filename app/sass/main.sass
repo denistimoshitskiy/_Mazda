@@ -1,0 +1,182 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	background-color: #17181a
+	color: white
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+		border-top: none
+		border-right: none
+		border-left: none
+		border-bottom: 1px solid white
+		opacity: 0.8
+		outline: none
+		color: white
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	// height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+.logo
+	position: absolute
+	left: 10vw
+	top: 45px
+	width: 166px
+	height: 80px
+
+.phone 
+	position: absolute
+	top: 46px
+	right: 10vw
+	&-p
+		margin-bottom: 5px		
+
+.callback
+	width: 143px
+	height: 31px
+	border: none
+	font-size: 14px
+	background-color: $accent
+	color: white
+
+.icons
+	display: flex
+	text-align: center
+	list-style-type: none
+	margin-top: -100px
+	flex-wrap: wrap
+	li
+		display: block
+		width: 120px
+		margin-right: 35px
+
+	.icon-text
+		margin-top: 5px	
+
+h1
+	text-align: center
+	margin-bottom: 70px
+	padding-top: 60px
+	font-family: Rubik-h, sans-serif	
+
+h3
+	font-family: $heading
+	opacity: 0.5
+	letter-spacing: 1px
+
+.mazda-6-list
+	display: flex
+	text-align: center
+	list-style-type: none
+	flex-wrap: wrap
+	padding-top: 30px
+	li
+		margin-bottom: 15px
+	.price,
+	.to,
+	.kasko,
+	.credit	
+		width: 149px
+
+
+.mazda-6,
+.mazdacx5,		
+.mazdacx9,
+.mazda3-sedan
+	width: 558px
+	height: 290px	
+
+.main-footer
+	background-color: #2e3639
+	margin-top: 60px
+	h2 
+		margin-top: 50px
+		text-align: center
+		line-height: 1.4em
+
+form
+	width: 210px
+	margin: 30px auto
+
+input
+	width: 210px
+	height: 40px
+	background: none
+	margin-bottom: 10px
+	&::placeholder
+		text-align: center
+		font-weight: 300
+		font-size: 14px
+		color: white
+
+button.button
+	margin-top: 20px
+	margin-left: 35px
+	width: 143px
+	height: 31px
+	border: none
+	font-size: 14px
+	background-color: $accent
+	color: white	
+
+.footer
+	background-color: #17181a
+	width: 100%
+	text-align: center
+	height: 47px
+	padding-top: 12px
+	font-size: 14px
+
+.maps
+	position: relative
+
+.contacts
+	background-color: #2e3639
+	position: absolute
+	left: 33%
+	top: 35%		
+
+.contacts-list
+	list-style-type: none
+	padding-top: 20px
+	padding-left: 25px
+	padding-bottom: 5px
+	padding-right: 25px
+	font-weight: 300
+	margin-bottom: 0
+	li 
+		margin-bottom: 5px
+		b
+			font-weight: 600
+
+.maps-link
+	text-align: center
+			
+@import "media" // Always at the end
